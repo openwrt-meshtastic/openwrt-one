@@ -2,13 +2,7 @@
 #!/bin/bash
 USER=user
 #IFNAME=eno1
-#IFNAME=enxa0cec8098788
-
-#IFNAME=enx00133b56066d
-
 IFNAME=enx000ec6817901
-
-#IFNAME=enx00e04c36a6be
 
 /sbin/ip addr replace 192.168.11.0/24 dev $IFNAME
 /sbin/ip link set dev $IFNAME up
