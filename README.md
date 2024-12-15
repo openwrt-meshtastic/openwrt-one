@@ -61,6 +61,8 @@ Lora:
 ```
  Press '2' to Boot system via TFTP.
 
+
+## one.sh (tftpboot example)
 ```
 #https://openwrt.org/toh/mikrotik/common
 #!/bin/bash
