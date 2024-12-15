@@ -1,5 +1,5 @@
 
-# OpenWRT ONE Test Firmware fir Meshtastic
+# OpenWRT ONE Test Firmware for Meshtasticd
 
 ## Build Instructions
 ```
@@ -13,6 +13,30 @@ make oldconfig
 make -j$(nproc)
 ```
 
+## Install the Meshtasticd packages
+```
+still todo
+```
+
+## Configure config.yaml
+```
+You now require to set either MACAddress or MACAddressSource
+```
+## Configure your LoRa Radio
+```
+nano /etc/meshtasticd/config.d/OpenWRT-One-mikroBUS-LR-IOT-CLICK.yaml
+##  https://www.mikroe.com/lr-iot-click
+Lora:
+  Module: lr1110  # OpenWRT ONE mikroBUS
+#  CS: 25
+  IRQ: 10
+  Busy: 12
+#  Reset: 2
+  spidev: spidev2.0
+  DIO3_TCXO_VOLTAGE: 1.6
+```
+
 ## Ready Build use Instructions
 
 Boot from TFTP
+
