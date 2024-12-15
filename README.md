@@ -56,6 +56,8 @@ Connect you USB-C console cable to the front of the OpenWRT One
 
 Acccess the serial console screen below
 
+Download the image folder onto your computer and extract it in your tftp server folder
+
 ## Boot from TFTP
 ```
 
