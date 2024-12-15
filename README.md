@@ -35,6 +35,19 @@ Lora:
   spidev: spidev2.0
   DIO3_TCXO_VOLTAGE: 1.6
 ```
+## Or for SX1262 LoRa
+```
+nano /etc/meshtasticd/config.d/OpenWRT-One-mikroBUS-sx1262.yaml
+Lora:
+  Module: sx1262  # OpenWRT ONE mikroBUS
+##  CS: 25
+  IRQ: 10
+  Busy: 12
+##  Reset: 2
+  spidev: spidev2.0
+  DIO2_AS_RF_SWITCH: true
+  DIO3_TCXO_VOLTAGE: true
+```
 
 ## Ready Build use Instructions
 
