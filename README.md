@@ -38,7 +38,7 @@ Lora:
 
 ## Ready Build use Instructions
 
-## Boot from TFTP
+# Boot from TFTP
 ```
 
         ( ( ( OpenWrt ) ) )  [SPI-NAND]       U-Boot 2024.10-OpenWrt-r27893-b6bb
