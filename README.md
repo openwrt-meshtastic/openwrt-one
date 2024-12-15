@@ -38,7 +38,7 @@ Lora:
 
 ## Ready Build use Instructions
 
-# Boot from TFTP
+## Boot from TFTP
 ```
 
         ( ( ( OpenWrt ) ) )  [SPI-NAND]       U-Boot 2024.10-OpenWrt-r27893-b6bb
@@ -59,7 +59,7 @@ Lora:
   
   
 ```
-## Press '2' to Boot system via TFTP.
+ Press '2' to Boot system via TFTP.
 
 ```
 #https://openwrt.org/toh/mikrotik/common
