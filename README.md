@@ -59,6 +59,9 @@ Lora:
   
   
 ```
+## Press '2' to Boot system via TFTP.
+
+```
 #https://openwrt.org/toh/mikrotik/common
 #!/bin/bash
 USER=user
