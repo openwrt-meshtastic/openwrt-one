@@ -38,6 +38,11 @@ Lora:
 
 ## Ready Build use Instructions
 
+Set your OpenWRT ONE dip switch to boot from NAND (not NOR) Flash (located on back next to 2.5G / PoE Port
+Connect you USB-C console cable to the front of the OpenWRT One
+
+Acccess the serial console screen below
+
 ## Boot from TFTP
 ```
 
@@ -59,7 +64,7 @@ Lora:
   
   
 ```
- Press '2' to Boot system via TFTP.
+ Press '2' to Boot system via TFTP or '5' Load production system via TFTP then write to NAND.
 
 
 ## one.sh (tftpboot example)
