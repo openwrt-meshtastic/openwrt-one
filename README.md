@@ -38,5 +38,26 @@ Lora:
 
 ## Ready Build use Instructions
 
-Boot from TFTP
+## Boot from TFTP
+```
+
+        ( ( ( OpenWrt ) ) )  [SPI-NAND]       U-Boot 2024.10-OpenWrt-r27893-b6bb
+      1. Run default boot command.
+      2. Boot system via TFTP.
+      3. Boot production system from NAND.
+      4. Boot recovery system from NAND.
+      5. Load production system via TFTP then write to NAND.
+      6. Load recovery system via TFTP then write to NAND.
+      7. Load BL31+U-Boot FIP via TFTP then write to NAND.
+      8. Load BL2 preloader via TFTP then write to NAND.
+      9. Reboot.
+      a. Reset all settings to factory defaults.
+      0. Exit
+
+
+  Press UP/DOWN to move, ENTER to select, ESC to quit
+  
+  
+```
+
 
