@@ -63,6 +63,8 @@ Lora:
 
 
 ## one.sh (tftpboot example)
+The OpenWRT will only boot from a TFTP server with an ip address of 192.168.11.23
+
 ```
 #https://openwrt.org/toh/mikrotik/common
 #!/bin/bash
