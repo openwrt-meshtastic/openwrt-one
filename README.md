@@ -15,7 +15,11 @@ make -j$(nproc)
 
 ## Install the Meshtasticd packages
 ```
-still todo
+echo 'https://openwrt-meshtastic.github.io/repo/main/aarch64_cortex-a53/packages.adb' > /etc/apk/repositories.d/openwrt-meshtastic.list
+
+
+apk --allow-untrusted update
+apk --allow-untrusted add meshtasticd
 ```
 
 ## Configure config.yaml
