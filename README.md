@@ -1,7 +1,7 @@
 
 # OpenWRT ONE Test Firmware for Meshtasticd
 
-## Build Instructions
+## Build Instructions (compile yourself)
 ```
 git clone -b openwrt-one https://github.com/openwrt-meshtastic/openwrt.git
 cd openwrt
@@ -53,7 +53,12 @@ Lora:
   DIO3_TCXO_VOLTAGE: true
 ```
 
-## Ready Build use Instructions
+## OpenWRT ONE mikroBUS pinout for SPI LoRa Module
+
+![image](https://github.com/user-attachments/assets/25f3f546-51a8-4400-9459-ad8d8aeb828c)
+
+
+## Ready Build use Instructions (tftboot and install on NAND)
 
 Set your OpenWRT ONE dip switch to boot from NAND (not NOR) Flash (located on back next to 2.5G / PoE Port
 Connect you USB-C console cable to the front of the OpenWRT One
