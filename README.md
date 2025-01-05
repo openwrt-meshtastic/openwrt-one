@@ -13,18 +13,34 @@ make oldconfig
 make -j$(nproc)
 ```
 
-## Install the Meshtasticd packages
+## Add Meshtastic package key and Install the Meshtasticd packages
 ```
-echo 'https://openwrt-meshtastic.github.io/repo/main/aarch64_cortex-a53/packages.adb' > /etc/apk/repositories.d/openwrt-meshtastic.list
+tee -a /etc/apk/keys/meshtastic-apk.pem<<EOF
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEM53kxQgA40hjnpavBMS8o1IgNUVE
+5+T2JAVtEod+OB7b/3Nb5zHXKr+J7joIPdDUyUjCY2AQaYAxWBABboQVAA==
+-----END PUBLIC KEY-----
+EOF
 
+echo "https://meshtastic.github.io/openwrt-repo/main/$(cat /etc/apk/arch)/packages.adb" > /etc/apk/repositories.d/meshtastic.list
 
-apk --allow-untrusted update
-apk --allow-untrusted add meshtasticd
+apk update
+apk add meshtasticd
+
 ```
 
 ## Configure config.yaml
 ```
 You now require to set either MACAddress or MACAddressSource
+
+On OpenWRT you can use the br-lan for MACAddressSource
+
+right at the bottom (uncomment and change to br-lan)
+#  MACAddressSource: eth0
+
+change MAC source from eth0 to br-lan
+  MACAddressSource: br-lan
+
 ```
 ## Configure your LoRa Radio
 ```
